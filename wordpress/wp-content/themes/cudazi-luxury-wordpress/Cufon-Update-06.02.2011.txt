@@ -1,2 +1,0 @@
-
-June 2, 2011 - Updated cufon-yui.js file to fix IE9 bug in Cufon
