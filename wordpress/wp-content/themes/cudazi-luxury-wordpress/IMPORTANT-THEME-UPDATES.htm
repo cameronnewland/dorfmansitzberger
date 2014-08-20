@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Luxury WordPress Updates</title>
+<style type="text/css">
+body
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.8em;
+	margin:10px 100px;
+}
+li { padding:6px 0;}
+</style>
+</head>
+<body>
+
+<h1>Luxury Wordpress Updates</h1>
+
+
+<p><strong>Latest updates as of 1.16.2012</strong></p>
+
+<p><em>functions.php &amp; style.css</em><br />
+Updated stylesheet to include root style.css</p>
+
+<p><em>style.css</em><br />
+Updated theme version</p>
+
+
+<hr />
+
+
+
+<p><strong>Latest updates as of 9.12.10</strong></p>
+
+<p><em>header.php &amp; functions.php</em><br />
+Added WordPress 3.0 Menu Support with fallback to the standard menu system.</p>
+
+<p><em>style.css</em><br />
+Updated theme version</p>
+
+
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+<p><strong>Latest updates as of 8.4.10</strong></p>
+
+<p><em>js/general.js </em><br />
+Passed in $ paramater and used the jQuery name to avoid conflicts with other plugins.</p>
+
+<p><em>functions.php</em><br />
+function add_javascript() contents moved to header.php</p>
+
+<p><em>header.php</em><br />
+Added wp_enqueue_script for inserting JavaScript<br />
+Also now using built in jquery set to noconflict mode</p>
+
+<p><em>page-portfolio-a.php</em><br />
+Added category -0 if none is set to pull in all posts by default instead of none</p>
+
+<p><em>style.css</em><br />
+Updated theme version</p>
+
+
+<hr />
+
+
+<p><strong>Latest updates as of 6.21.10</strong></p>
+<p>Small update to js/general.js - changed height: 'auto', to height: 400</p>
+<hr />
+<p><strong>Latest updates as of 6.20.10</strong></p>
+<p><strong>WordPress 3.0 - First round updates:</strong></p>
+<ul>
+	<li>Applied fix to page-custom-category.php so blog page content appears properly along with the posts the page was pulling in</li>
+    <li>Update to screen.ss, menu had a large 20px gap due to wordpress adding a new class to sub menu items</li>
+    <li>Update to page-home-noslider.php, page content was no longer appearing with the rest of the widgets/etc</li>
+    <li>Update to page-portfolio-a.php, page content was no longer appearing with the rest of the gallery items being pulled in</li>
+</ul>
+
+
+<hr />
+
+<p><strong>Latest updates as of 2.26.10</strong></p>
+<p>PLEASE BACK UP YOUR ORIGINAL THEME BEFORE APPLYING UPDATES TO BE SURE YOUR DATA IS SAFE!</p>
+<p>Although I try to keep all upgrades non-destructive to your existing site, this upgrade is optional and I am not responsible for any data lost.</p>
+<p>Please read the full instruction PDF and item comments before asking for support - thank you! (Latest news and updates: <a href="http://twitter.com/cudazi">twitter.com/cudazi</a>)</p>
+<hr />
+<p><strong>Files Updated:</strong></p>
+<ul>
+	<li>/js/general.js</li>
+	<li>/css/style.css</li>
+	<li>single.php</li>
+	<li>page-home.php</li>
+	<li>functions.php</li>
+</ul>
+<p><strong>Files Added:</strong></p>
+<ul>
+	<li>page-portfolio-a.php</li>
+	<li>page-home-noslider.php</li>
+</ul>
+<hr />
+
+<h2>Instructions</h2>
+
+
+<h3>Custom portfolio page:</h3>
+<ol>
+	<li>Add a new page, assign the custom page template "Portfolio"</li>
+	<li>Tell it which categories to use with a custom field named <strong>categories</strong>.<br />
+	<small>Enter -0 to show all<br />
+	44 to show only category 44<br />
+	44,56 to show both category 44 and 56</small>
+	</li>
+	<li>Optional: Override the default number of items per page by adding a custom field named <strong>posts_per_page</strong>.<br />
+	Enter a number of items to display per page or it will pull in your default WordPress settings.
+	</li>
+	<li>Optional: Hide the main page content of the portfolio page if you would like by adding a custom field of <strong>hide_content</strong> with any value such as <em>yes</em> - If you want a page title to appear, leave this setting alone and just enter &lt;h2&gt;Sample Heading&lt;/h2&gt; in the content area set to HTML.</li>
+	<li>Optional: Add a widget to the new widget area: <strong>Footer - Portfolio</strong> which is specific to this page.</li>
+</ol>
+<p>This page is reusable so you are able to have multiple categories of items on your main menu</p>
+<p>You can attach a post thumbnail to this page itself which will be sized to 940px and placed at the top.</p>
+<p>Items displaying on this custom portfolio page <strong>need a post thumbnail image attached</strong>. Instructions on adding a post thumbnail are in the main instructions with this theme.</p>
+<p>If you want to adjust the height of the thumbnails, edit this number in functions.php:<br />
+<strong>add_image_size( 'portfolio-thumb', 220, <u>220</u>); // 4 column portfolio size</strong>
+<br />(You may need to delete and re-attach the post thumbnail for the change to take effect)</p>
+
+
+<h3>Alternate home page template:</h3>
+<ol>
+	<li>Add a new page, assign the custom page template "Home - No Slider"</li>
+	<li>Add a widget to the new widget area: <strong>Home Slider Replacement</strong> which is specific to this page.
+	<br />Use the text widget will for embedding video or custom HTML
+	</li>
+</ol>
+
+<h3>Other</h3>
+<ul>
+	<li>Author bios will now appear on the single post pages unless disabled through the Theme Settings page</li>
+	<li>The custom theme settings page now has an option to disable the link on promo images on the home page</li>
+	<li>Fixed single.php when exerpt and more quicktag was used at the same time</li>
+	<li>Updated general.js / css that should let the drop down menu to appear in front the promo slider while allowing the use of lightbox plugins</li>
+</ul>
+<br /><br /><br />
+
+</body>
+</html>
