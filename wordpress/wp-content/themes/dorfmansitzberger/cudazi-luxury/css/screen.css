@@ -22,6 +22,11 @@ p, img, a
 body, textarea
 {
 	font-family:'Open Sans', Helvetica, sans-serif;
+	font-family:'Garamond', serif;
+}
+
+li.page_item a {
+	font-family:'Open Sans', Helvetica, sans-serif;
 }
 body
 {
