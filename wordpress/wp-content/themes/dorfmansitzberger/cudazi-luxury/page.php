@@ -7,7 +7,7 @@
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="post clearfix" id="post-<?php the_ID(); ?>">
 				<?php get_thumbnail_above_post($post->ID, $col[1]); ?>
-				<h2 class="posttitle"><?php the_title(); ?></h2>
+				<h1 class="posttitle"><?php the_title(); ?></h1>
 				<?php if(has_excerpt()) { the_excerpt(); }else{ the_content(custom_readmore()); } ?>
 				<?php wp_link_pages(array('before' => '<p><strong>Pages: ', 'after' => '</strong></p>', 'next_or_number' => 'number')); ?>
 			</div>

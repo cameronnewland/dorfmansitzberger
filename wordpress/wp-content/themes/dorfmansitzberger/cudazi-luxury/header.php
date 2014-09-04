@@ -23,15 +23,16 @@
 		if($custom_settings["font"]){ $font = $custom_settings["font"];	}
 		echo "<!--[if lt IE 8]><script src='http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js' type='text/javascript'></script><![endif]-->";
 		wp_enqueue_script('jquery'); // load new jquery
-		wp_enqueue_script('cudazi_cufon',get_bloginfo('template_directory')."/js/cufon-yui.js");
-		wp_enqueue_script('cudazi_fonts',get_bloginfo('template_directory')."/js/fonts/".$font);
+		// wp_enqueue_script('cudazi_fonts',get_bloginfo('template_directory')."/js/fonts/".$font);
 		wp_enqueue_script('cudazi_superfish',get_bloginfo('template_directory')."/js/superfish.js");
 		wp_enqueue_script('cudazi_supersubs',get_bloginfo('template_directory')."/js/supersubs.js");
 		wp_enqueue_script('cudazi_cycle',get_bloginfo('template_directory')."/js/jquery.cycle.min.js");
 		wp_enqueue_script('cudazi_general',get_bloginfo('template_directory')."/js/general.js");
 		echo html_entity_decode($custom_settings["additional_js"], ENT_QUOTES);
 	?>
-    
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,800,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />

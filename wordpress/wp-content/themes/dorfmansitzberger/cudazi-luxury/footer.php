@@ -6,7 +6,7 @@
 			<div class="grid_6">
 				<p><?php 
 					$footer_text = $custom_settings["footer_text"];
-					if($footer_text) { echo html_entity_decode(str_replace("CURRENTYEAR",date("Y"),$footer_text), ENT_QUOTES); }else{ ?><?php bloginfo('name'); ?> - Copyright <?php echo date("Y"); ?> - Original design by <a href="http://cudazi.com/" title="cudazi web design">Cudazi</a> for <a href="http://themeforest.net/user/cudazi/?ref=cudazi">ThemeForest.net</a><?php }
+					if($footer_text) { echo html_entity_decode(str_replace("CURRENTYEAR",date("Y"),$footer_text), ENT_QUOTES); }else{ ?><?php bloginfo('name'); ?> - &copy; <?php echo date("Y"); ?><?php }
 				?></p>
 			</div><!--//grid6-->
 			<div class="grid_6">

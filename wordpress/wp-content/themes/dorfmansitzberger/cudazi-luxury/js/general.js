@@ -2,7 +2,7 @@
 
 // FONT REPLACEMENT
 // Replace all tags with cufon equivalant
-Cufon.replace('h1,h2,h3,h4,h5,h6,#commentform label');
+// Cufon.replace('h1,h2,h3,h4,h5,h6,#commentform label');
 //
 
 // JQUERY

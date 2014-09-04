@@ -21,7 +21,7 @@ p, img, a
 
 body, textarea
 {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:'Open Sans', Helvetica, sans-serif;
 }
 body
 {
@@ -44,7 +44,8 @@ p, h1, h2, h3, h4, h5, h6
 h1, h2, h3, h4, h5, h6
 {
 	color:#333;
-	font-weight:normal;
+	font-weight:bold;
+	font-family:'Noto Serif', serif;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 {
@@ -140,7 +141,7 @@ A:active
 
 .post .posttitle
 {
-	padding-bottom:5px;
+	padding-bottom: 45px;
 }
 .post .postmeta a.comment-count
 {
@@ -645,3 +646,7 @@ html[xmlns] .clearfix {
 
 /* updated 6.20.10 - wp3 menu now uses children class and so do the comments */
 .sf-menu UL.children { margin-top:0; }
+
+#wpcf7-f18-p6-o1 .wpcf7-form-control.wpcf7-textarea {
+	width:100% !important;
+}
